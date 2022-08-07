@@ -21,6 +21,7 @@ class createcontroller extends Controller
     	$articles->title = $request->input('title');
     	$articles->description = $request->input('description');
     	$articles->save();
+		
     	return redirect('/')->with('info', 'Post saved successfully!');
     }
 
